@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+.topContent{
+    color: white;
+    position: relative;
+}
+.topContent__Container{
+    position: absolute;
+    top: 300px;
+    left: 150px;
+
+}
+.topContent__quotes{
+  position: relative;
+  left: 750px;
+  top: -65px;
+}
+.topContent__quotes>h2{
+    position: absolute;
+    font-size: 50px;
+    opacity: 0;
+    animation: text 3s ease-in-out;
+}
+.topContent__quotes>h2:nth-child(1){
+    animation-delay: 0s;
+}
+.topContent__quotes>h2:nth-child(2){
+    animation-delay: 3s;
+}
+
+@keyframes text{
+    50%{
+        opacity: 1;
+
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+@media screen and (max-width:576px){
+    .topContent__quotes>h2{
+        font-size: 80px;
+    }
+}
+.topContent__Container>p{
+    letter-spacing: 1px;
+    text-align: left;
+    padding-left: 3px;
+    padding-top: 20px;
+    font-family: "Monserret",serif;
+    font-size: 40px;
+}
+.topContent__Container>a>button{
+    margin-top: 30px;
+    text-align: left;
+    margin-right: 20px;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+    cursor: pointer;
+}
+.topContent__Container>h1{
+    font-size: 60px;
+    font-family: "Montserrat",sans-serif;
+    letter-spacing: 1px;
+}
+.topContent__resumeButton
+{
+    color: white;
+    background-color: #f64c08;
+    font-family: "Montserrat",sans-serif;
+    font-size: 16px;
+    padding: 10px 30px;
+    font-weight: 300;
+    cursor: pointer;
+    margin-right: 20px;
+
+}
+.topContent__resumeButton:hover{
+    color: #f64c08;
+    background-color: white;
+    font-weight: 600;
+}
+.topContent__workButton
+{
+    color: white;
+    border: 1px solid white !important;
+    background-color: transparent;
+    font-family: "Montserrat",sans-serif;
+    font-weight: 300;
+    cursor: pointer;
+    padding: 9px 45px;
+}
+.topContent__workButton:hover{
+    color: black;
+    background-color: white;
+    font-weight: 600;
+}

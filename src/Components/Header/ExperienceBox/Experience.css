@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+.experience{
+    display: flex;
+    color: white;
+    flex-direction: column;
+    border: 3px dotted white;
+    border-radius: 10px;
+    align-items: center;
+    height: 200px;
+    width: 400px;
+    justify-content: center;
+    cursor: pointer;
+    overflow: hidden;
+    background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.1); /* Black w/opacity/see-through */
+
+}
+.experience:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+    background-color: #f64c08;
+    color: black;
+
+}
+.experience>p{
+    font-size: 16px;
+    font-family: "joesfin sans", sans-serif;
+    letter-spacing: 1px;
+}
+.experience>h1{
+    text-align: center;
+}
